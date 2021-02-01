@@ -25,19 +25,22 @@ SELECT *
 	
 -- Below code to create table salaries
 CREATE TABLE employee_info.salaries (
- 	emp_no int,
+ 	emp_no int Primary Key,
  	salary int
 );
+
+Drop table employee_info.salaries;
 
 SELECT *
 	FROM employee_info.salaries;
 	
 -- Below code to create table titles
 CREATE TABLE employee_info.titles (
- 	title_id varchar(5),
+ 	title_id varchar(5) Primary Key,
  	title varchar(25)
 );
 
+Drop table employee_info.titles;
 
 SELECT *
 	FROM employee_info.titles;
@@ -60,6 +63,8 @@ CREATE TABLE department_info.dept_emp (
  	dept_no varchar(4)
 );
 
+Drop table department_info.dept_emp;
+
 SELECT *
 	FROM department_info.dept_emp;
 	
@@ -68,6 +73,8 @@ CREATE TABLE department_info.dept_manager (
  	dept_no varchar(4),
 	emp_no int
 );
+
+Drop table department_info.dept_manager;
 
 SELECT *
 	FROM department_info.dept_manager;
